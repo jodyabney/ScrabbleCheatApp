@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		B105FDFA248ACAF50016223D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B105FDF9248ACAF50016223D /* AppDelegate.swift */; };
 		B105FDFC248ACAF50016223D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B105FDFB248ACAF50016223D /* SceneDelegate.swift */; };
-		B105FDFE248ACAF50016223D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B105FDFD248ACAF50016223D /* ViewController.swift */; };
 		B105FE01248ACAF50016223D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B105FDFF248ACAF50016223D /* Main.storyboard */; };
 		B105FE03248ACAF60016223D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B105FE02248ACAF60016223D /* Assets.xcassets */; };
 		B105FE06248ACAF60016223D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B105FE04248ACAF60016223D /* LaunchScreen.storyboard */; };
+		B105FE17248ACDBC0016223D /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B105FE13248ACDBB0016223D /* TrieNode.swift */; };
+		B105FE18248ACDBC0016223D /* ScrabbleTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B105FE14248ACDBC0016223D /* ScrabbleTile.swift */; };
+		B105FE19248ACDBC0016223D /* ScrabbleBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B105FE15248ACDBC0016223D /* ScrabbleBrain.swift */; };
+		B105FE1A248ACDBC0016223D /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B105FE16248ACDBC0016223D /* Trie.swift */; };
+		B105FE1C248ACDD40016223D /* Array+permutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B105FE1B248ACDD40016223D /* Array+permutations.swift */; };
+		B105FE20248AD04E0016223D /* dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = B105FE1F248AD04E0016223D /* dictionary.txt */; };
+		B105FE22248AD06B0016223D /* ParseDictionaryFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B105FE21248AD06B0016223D /* ParseDictionaryFile.swift */; };
+		B11979C1248B135B00075B08 /* RackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11979C0248B135B00075B08 /* RackViewController.swift */; };
+		B11979C3248B247900075B08 /* MatchedWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11979C2248B247900075B08 /* MatchedWordsViewController.swift */; };
+		B1812306248AE3B300A53B3C /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1812305248AE3B300A53B3C /* RoundButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B105FDF6248ACAF50016223D /* ScrabbleCheatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrabbleCheatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B105FDF9248ACAF50016223D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B105FDFB248ACAF50016223D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B105FDFD248ACAF50016223D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B105FE00248ACAF50016223D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B105FE02248ACAF60016223D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B105FE05248ACAF60016223D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B105FE07248ACAF60016223D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B105FE13248ACDBB0016223D /* TrieNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
+		B105FE14248ACDBC0016223D /* ScrabbleTile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrabbleTile.swift; sourceTree = "<group>"; };
+		B105FE15248ACDBC0016223D /* ScrabbleBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrabbleBrain.swift; sourceTree = "<group>"; };
+		B105FE16248ACDBC0016223D /* Trie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
+		B105FE1B248ACDD40016223D /* Array+permutations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+permutations.swift"; sourceTree = "<group>"; };
+		B105FE1F248AD04E0016223D /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
+		B105FE21248AD06B0016223D /* ParseDictionaryFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseDictionaryFile.swift; sourceTree = "<group>"; };
+		B11979C0248B135B00075B08 /* RackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RackViewController.swift; sourceTree = "<group>"; };
+		B11979C2248B247900075B08 /* MatchedWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedWordsViewController.swift; sourceTree = "<group>"; };
+		B1812305248AE3B300A53B3C /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,56 @@
 		B105FDF8248ACAF50016223D /* ScrabbleCheatApp */ = {
 			isa = PBXGroup;
 			children = (
+				B105FE10248ACD2E0016223D /* Extensions */,
+				B105FE0E248ACD0F0016223D /* Model */,
+				B105FE0D248ACD060016223D /* Controller */,
 				B105FDF9248ACAF50016223D /* AppDelegate.swift */,
 				B105FDFB248ACAF50016223D /* SceneDelegate.swift */,
-				B105FDFD248ACAF50016223D /* ViewController.swift */,
-				B105FDFF248ACAF50016223D /* Main.storyboard */,
+				B105FE0F248ACD220016223D /* View */,
 				B105FE02248ACAF60016223D /* Assets.xcassets */,
+				B105FE1F248AD04E0016223D /* dictionary.txt */,
 				B105FE04248ACAF60016223D /* LaunchScreen.storyboard */,
 				B105FE07248ACAF60016223D /* Info.plist */,
 			);
 			path = ScrabbleCheatApp;
+			sourceTree = "<group>";
+		};
+		B105FE0D248ACD060016223D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B11979C0248B135B00075B08 /* RackViewController.swift */,
+				B11979C2248B247900075B08 /* MatchedWordsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B105FE0E248ACD0F0016223D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B105FE21248AD06B0016223D /* ParseDictionaryFile.swift */,
+				B105FE15248ACDBC0016223D /* ScrabbleBrain.swift */,
+				B105FE14248ACDBC0016223D /* ScrabbleTile.swift */,
+				B105FE16248ACDBC0016223D /* Trie.swift */,
+				B105FE13248ACDBB0016223D /* TrieNode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B105FE0F248ACD220016223D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B1812305248AE3B300A53B3C /* RoundButton.swift */,
+				B105FDFF248ACAF50016223D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B105FE10248ACD2E0016223D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B105FE1B248ACDD40016223D /* Array+permutations.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +186,7 @@
 			files = (
 				B105FE06248ACAF60016223D /* LaunchScreen.storyboard in Resources */,
 				B105FE03248ACAF60016223D /* Assets.xcassets in Resources */,
+				B105FE20248AD04E0016223D /* dictionary.txt in Resources */,
 				B105FE01248ACAF50016223D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +198,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B105FDFE248ACAF50016223D /* ViewController.swift in Sources */,
+				B105FE1C248ACDD40016223D /* Array+permutations.swift in Sources */,
 				B105FDFA248ACAF50016223D /* AppDelegate.swift in Sources */,
 				B105FDFC248ACAF50016223D /* SceneDelegate.swift in Sources */,
+				B105FE1A248ACDBC0016223D /* Trie.swift in Sources */,
+				B105FE18248ACDBC0016223D /* ScrabbleTile.swift in Sources */,
+				B11979C1248B135B00075B08 /* RackViewController.swift in Sources */,
+				B1812306248AE3B300A53B3C /* RoundButton.swift in Sources */,
+				B105FE22248AD06B0016223D /* ParseDictionaryFile.swift in Sources */,
+				B11979C3248B247900075B08 /* MatchedWordsViewController.swift in Sources */,
+				B105FE19248ACDBC0016223D /* ScrabbleBrain.swift in Sources */,
+				B105FE17248ACDBC0016223D /* TrieNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
