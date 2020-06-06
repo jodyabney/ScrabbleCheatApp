@@ -11,27 +11,25 @@ import UIKit
 class MatchedWordsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     //MARK: - IBOutlets
-    
     @IBOutlet weak var tableView: UITableView!
     
     
     //MARK: - Properties
-    
     var matchedWords: [(String, Int)] = []
     
 
     //MARK: - ViewDidLoad
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.dataSource = self
         
-        // sort by points descending and word ascending
+        // sort: points descending. word ascending
         matchedWords.sort { (lhsWord: (String, Int), rhsWord: (String, Int)) in
+            // if points aren't equal then just sort on points
             if lhsWord.1 != rhsWord.1 {
                 return lhsWord.1 > rhsWord.1
-            } else {
+            } else { // sort on words ascending if points are equal
                 return lhsWord.0 < rhsWord.0
             }
         }
@@ -48,14 +46,10 @@ class MatchedWordsViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MatchedWordCell", for: indexPath)
-
+        // configure the cell contents
         let matchedWord = matchedWords[indexPath.row]
         cell.textLabel?.text = matchedWord.0
         cell.detailTextLabel?.text = String(matchedWord.1)
-
         return cell
     }
-    
-    
-
 }

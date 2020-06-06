@@ -128,9 +128,9 @@ struct ScrabbleBrain {
     private func calcWordPoints(for word: String) -> Int {
         var pointValue = 0
         // loop through the word to calculate the total points
-        pointValue = word.reduce(0, { (result, letter) in
-            scrabbleTiles.getTile(letter: String(letter.uppercased())).pointValue
-        })
+        for letter in word {
+            pointValue += scrabbleTiles.getTile(letter: String(letter.uppercased())).pointValue
+        }
         return pointValue
     }
     

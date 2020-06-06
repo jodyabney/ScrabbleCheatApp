@@ -47,12 +47,13 @@ class RackViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @IBAction func cheatTapped(_ sender: RoundButton) {
+        // create the array of letter groupings and permutations from the player tiles
         scrabbleBrain.createSearchGroup()
+        // find any matches in the dictionary Trie
         scrabbleBrain.findWordMatches()
     }
     
     
-
     //MARK: - Table View Methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,10 +62,9 @@ class RackViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerTileCell", for: indexPath)
-
+        // configure the cell labels
         cell.textLabel?.text = scrabbleBrain.playerTiles[indexPath.row].letter
         cell.detailTextLabel?.text = String(scrabbleBrain.playerTiles[indexPath.row].pointValue)
-
         return cell
     }
     
@@ -74,10 +74,9 @@ class RackViewController: UIViewController, UITableViewDelegate, UITableViewData
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let matchedWordTVC = segue.destination as? MatchedWordsViewController {
+            // pass the matched word array of tuples to the destinationVC
             matchedWordTVC.matchedWords = scrabbleBrain.matchedWords
         }
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
     
 
